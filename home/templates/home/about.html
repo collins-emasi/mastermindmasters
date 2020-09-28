@@ -1,0 +1,226 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <!-- slider_area_start -->
+    <div class="slider_area">
+        <div class="single_slider about_banner  d-flex align-items-center slider_bg_2 overlay">
+            <div class="container">
+                <div class="row align-items-center justify-content-start">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="slider_text">
+                            <h3 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".1s">
+                                Current day pace-setter towards the know-how for
+                                exploitation of potentials
+                            </h3>
+                            <a class="boxed-btn3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s" href="#">Visit
+                                Our Works</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider_area_end -->
+
+    <div class="our_mission_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="mission_text">
+                        <h4>Our Vision</h4>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="mision_info">
+                        <div class="single_mission">
+                            {{ vision.content|linebreaks }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about_area">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-lg-5 offset-lg-1">
+                    <div class="about_info">
+                        <div class="section_title white_text">
+                            <span class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">About Us</span>
+                            <h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">Empowering
+                                individuals </h3>
+                            <p class="mid_text wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                                {{ about.content }}
+                            </p>
+                            <p class="last_text wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+                                “The current day pace-setter and compass (to give directions) towards the know-how for
+                                exploitation of potentials especially in the youthful generation.</p>
+                            <a href="{% url 'about' %}" class="boxed-btn3 wow fadeInUp" data-wow-duration="1s"
+                               data-wow-delay=".7s">About Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="how_we_work_area extra_margin">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="work_info">
+                        <div class="section_title">
+                            <h3 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">Our Mission</h3>
+                            <p class="mid_text wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">“Master Mind
+                                Masters.</p>
+                            <p class="last_p wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
+                                {{ mission.content }}
+                            </p>
+                        </div>
+                        <div class="video_watch d-flex align-items-center">
+                            <div class="play_btn wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+                                <a href="https://www.youtube.com/watch?v=d3pHuVlabsQ" class="video_icon popup-video"> <i
+                                        class="fa fa-play"></i> </a>
+                            </div>
+                            <span class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".7s"> Watch Video</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- team_member_start -->
+    <div class="team_area ">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center mb-90">
+                        <h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">Our Creative Board</h3>
+                        <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Description of what the
+                            creative board does in as little text as possible.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="single_team wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                        <div class="team_thumb">
+                            <img src="{% static 'home/img/team/11.jpeg' %}" alt="">
+                            <div class="team_hover">
+                                <div class="hover_inner text-center">
+                                    <ul>
+                                        <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
+                                        <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
+                                        <li><a href="#"> <i class="fa fa-instagram"></i> </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team_title text-center">
+                            <h3>Name Goes Here</h3>
+                            <p>Title goes here</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single_team wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+                        <div class="team_thumb">
+                            <img src="{% static 'home/img/team/22.jpeg' %}" alt="">
+                            <div class="team_hover">
+                                <div class="hover_inner text-center">
+                                    <ul>
+                                        <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
+                                        <li><a href="#"> <i class="fa fa-linkedin"></i> </a></li>
+                                        <li><a href="#"> <i class="fa fa-google-plus"></i> </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team_title text-center">
+                            <h3>Name Goes Here</h3>
+                            <p>Title goes here</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single_team wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+                        <div class="team_thumb">
+                            <img src="{% static 'home/img/team/33.jpeg' %}" alt="">
+                            <div class="team_hover">
+                                <div class="hover_inner text-center">
+                                    <ul>
+                                        <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
+                                        <li><a href="#"> <i class="fa fa-linkedin"></i> </a></li>
+                                        <li><a href="#"> <i class="fa fa-google-plus"></i> </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team_title text-center">
+                            <h3>Name Goes Here</h3>
+                            <p>Title goes here</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single_team wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
+                        <div class="team_thumb">
+                            <img src="{% static 'home/img/team/44.jpeg' %}" alt="">
+                            <div class="team_hover">
+                                <div class="hover_inner text-center">
+                                    <ul>
+                                        <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
+                                        <li><a href="#"> <i class="fa fa-linkedin"></i> </a></li>
+                                        <li><a href="#"> <i class="fa fa-google-plus"></i> </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team_title text-center">
+                            <h3>Name Goes Here</h3>
+                            <p>Title goes here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ team_member_end -->
+
+    <!-- testimonial_area  -->
+    <div class="testimonial_area ">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center mb-90">
+                        <h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"><strong>Our Pillars</strong></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="testmonial_active owl-carousel">
+                        {% for pillar in pillars %}
+                            <div class="single_carousel">
+                                <div class="single_testmonial text-center">
+                                    <div class="quote">
+                                        <img src="{% static 'home/img/testmonial/quote.svg' %}" alt="">
+                                    </div>
+                                    <p>{{ pillar.content|linebreaks }}</p>
+                                    <div class="testmonial_author">
+                                        <h3>{{ pillar.title|title }}</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /testimonial_area  -->
+{% endblock %}
